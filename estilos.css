@@ -1,0 +1,625 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background: #f2f2f2;
+	/*font-family: Georgia;*/
+	font-family: OpenSans-Regular;
+}
+@font-face {
+	font-family: 'Barrio-Regular';
+	src: url('fonts/Barrio-Regular.ttf');
+}
+@font-face {
+	font-family: 'Bitter-Regular';
+	src: url('fonts/Bitter-Regular.ttf');
+}
+@font-face {
+	font-family: 'Hind-Regular';
+	src: url('fonts/Hind-Regular.ttf');
+}
+@font-face {
+	font-family: 'IndieFlower';
+	src: url('fonts/IndieFlower.ttf');
+}
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('fonts/OpenSans-Regular.ttf');
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	background: #131629;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+header h1{
+	margin-left: 20px;
+	padding: 20px 0;		
+	cursor: pointer;
+}
+.titulo{
+	text-decoration: none; 
+	color: #bbb;
+	transition: all .8s ease;
+}
+.titulo:hover{
+	color: #fff;
+}
+
+
+.listaNavegacion{
+	display: flex;
+	list-style: none;
+	margin-right: 20px;
+	padding-top: 28px;
+}
+i{
+	margin-right: 5px;
+}
+.enlace{
+	margin-right: 10px;
+	text-decoration: none;
+	color: #bbb;
+	display: block;
+	padding-bottom: 15px;
+}
+.activo{
+	color: #fff;
+	border-bottom: 4px solid #fff;
+}
+
+
+
+.enlace:hover{
+	color: #fff;
+	border-bottom: 4px solid #fff;
+}
+.tabcontent{
+	width: 100%;
+	height: 400px;
+	text-align: center;
+	display: none;
+	padding-top: 5px;		
+}
+.link{
+	background-color: #d73117;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    width: 25%;
+    float: left; 
+    cursor: pointer;
+    font-size: 15px;
+}
+.intro{
+	margin-top: 75px;
+	display: block;
+	max-height: 445px;
+	min-height: 445px;
+}
+.cotizacion{
+	padding: 10px;
+	text-align: center;
+	background: #313745;
+	color: #fff;
+	border-radius: 10px;
+	text-decoration: none;
+	width: 100%;
+	transition: all .5s ease;
+}
+.cotizacion:hover{
+	background: #204b41;
+
+}
+
+#Casa{background: url('images/fotos-de-hoteles-05.jpg') no-repeat center; background-attachment: fixed !important;}
+#Hotel{background: url('images/departamento-residencial-en-venta-en-pontezuela-santiago-3581.jpg') no-repeat center; background-size: cover; background-attachment: fixed !important;}
+#Proyecto{background: url('images/Portada.jpg') no-repeat center; background-size: cover; background-attachment: fixed !important;}
+#Maquinaria{background: url('images/Tipos-de-Gruas.jpg') no-repeat center; background-size: cover; background-attachment: fixed !important;}
+
+.aside{
+	background: #d73;
+	padding-bottom: 20px;
+}
+.aside h2, main h2, .h{
+	padding: 15px 0 15px 20px;
+	font-size: 35px;
+	color: #131629;
+	text-align: center; 
+}
+.aside-hijo{
+	display: flex;
+	margin-right: 20px; 	
+}
+.article{
+	width: 33%;
+	margin-left: 20px;
+	background: #313745;
+	padding: 20px;
+	color: #fff;
+
+}
+.article h3{
+	margin-bottom: 10px;
+	color: #bbb;
+	font-size: 1.5em;
+}
+
+/*---area-principal---*/
+.area-principal{
+	padding-bottom: 20px;
+	background: #12AFAF;
+	color: #fff;
+}
+
+.area-principal-hijo{
+	display: flex;
+	align-items: center;
+}
+
+.area-principal-hijo div img{
+	border-radius: 50%;
+	width: 280px;
+	height: 270px;
+}
+.area-principal-hijo div p{
+	font-weight: bold;
+	padding: 30px 0px 30px 0;
+	font-size: 1.2em;
+}
+main .subtitulo-area-principal{
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-size: 1.5em;
+}
+
+.articulo-area-principal{
+	margin: 0 70px 0 80px;
+	width: 33%;
+}
+
+
+/*---area-ultimos-proyectos---*/
+.proyectos{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.75);
+	background: #fff;
+	width: 100%;
+	height: 300px;
+	margin-right: 10px;
+	cursor: pointer;
+	
+}
+.proyectos:hover{
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.5)	
+}
+.conjuntoProyectos{
+	display: flex;
+	margin: 0px 20px 0px 30px;
+}
+
+
+.titulo-proyectos{
+	padding: 0 0 20px 0;
+	font-size: 35px;
+	color: #131629;
+	text-align: center; 
+}
+
+.sProyectos{
+	background-color: #555;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.ofertas{
+	list-style: none;
+	border: 0.9px solid #eee;
+
+}
+.ofertas:hover{
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+}
+
+.columnas{
+	width: 33.3%;
+	margin: 0 8px;
+}
+.ofertas li{
+	padding: 1.5em 1em ;
+	text-align: center;
+	border: 0.9px solid #eee ;
+}
+.hOferta-1{
+	color: #fff;
+	background: url('images/casas-lujosas.jpg') center ;
+	font-size: 25px;
+	font-weight: bold;
+}
+.hOferta-2{
+	color: #fff;
+	background: url('images/departamento-residencial-en-venta-en-pontezuela-santiago-3581.jpg') center;
+	font-size: 25px;
+}
+.hOferta-3{
+	color: #fff;
+	background: url('images/5811029_orig.jpg') center;
+	font-size: 25px;
+}
+	
+
+.gris{
+	background: #eee;
+}
+.btnTabla{
+	text-decoration: none;
+	background: #4CAF50;
+	padding: 10px;
+	color: #fff;
+}
+
+
+
+
+/*------------------------
+	Pie de pagina
+-------------------------*/
+footer{	
+	background: #111;
+	display: flex;
+	padding: 20px;
+	justify-content: space-between;
+}
+.listaPie{
+	margin-left: 20px;
+	list-style: none;
+	padding-top: 20px;
+
+}
+.elementoPie{
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+	border-top: 2px ridge #555;
+	margin-bottom: 10px;
+	display: block;
+	border-bottom: 2px ridge #555;
+	text-align: center;
+	transition: all .4s ease;
+}
+.elementoPie:hover{
+	color: #555;
+	border-color: #fff;
+
+}
+.listaSocial{
+	list-style: none;
+	display: flex;
+	width: 200px;
+	margin: auto; 
+}
+
+.redSocial{
+	text-decoration: none;
+	color: #555;
+	font-size: 35px;
+	margin: 0 2rem;
+	transition: all .2s ease; 
+}
+.redSocial:hover{
+	color: #fff;	
+}
+
+
+/*---------------------------*/
+
+
+.owl-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: .3rem 0; }
+
+.owl-prev,
+.owl-next {
+  font-size: 3rem;
+  margin: 0 .5rem;
+  color: #12AFAF;
+  -webkit-transition: all .5s ease;
+          transition: all .5s ease; }
+
+.owl-prev:hover,
+.owl-next:hover {
+  color: #009500; }
+
+  /*---------------
+  	nosotros.html
+  ----------------*/
+.p{
+  padding: 10px 0;
+}
+section p .linkInicio{
+	color: #fff;
+}
+
+
+/*---------------------------*/
+
+
+/*-----------------------------
+	nosotros.html
+-----------------------------*/
+#nosotros-subtitulo{
+	font-size: 35px;
+	color: #131629;
+}
+
+main div article h3 a{
+	text-decoration: none;
+	color: #fff;
+	background: #313745;
+	padding: 20px;
+	display: block;
+	border-radius: 10px;
+	transition: all .8s ease;
+}
+main div article h3 a:hover{
+	background: #d73117;
+}
+
+/*-----------------------------
+	Fin nosotros.html
+-----------------------------*/
+
+
+/*-----------------------------
+	serviciosyempleados.html
+-----------------------------*/
+
+/*--- Tabla Nuestros Empleados ---*/
+
+table{
+	margin: 20px 0 0 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+td{
+	border: 1px solid #eee ;
+	padding: 15px 0 15px 15px;
+
+}
+th{
+	border: 1px solid #eee ;
+	padding: 20px;
+}
+/*td img{
+	width: 60px;
+	border-radius: 50%;
+	height: 60px;
+
+}*/
+.columnaEmpleado{
+	display: flex;
+
+}
+.textoEmpleado{
+	display: block;
+	margin: auto 0 auto 20px;
+}
+
+/*--- Nuestros servicios ---*/
+
+.seccionServicios{
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.articuloServicio{
+	background: #313745;
+	border-radius: 5px;
+	border: 2px solid #131;
+	padding: 20px;
+	color: #fff;
+	margin: 0 5px 0 5px;
+	width: 33.3%;
+
+}
+.articuloServicio h3{
+	padding-bottom: 10px;
+	font-size: 1.5em;
+	color: #bbb;
+}
+.articuloServicio a{
+	display: block;
+	margin: 20px 20px 0 20px;
+	background: #d73117;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 5px;
+	transition: all .5s ease;
+}
+.articuloServicio a:hover{
+	background: #131629;
+}
+.tituloServicio{
+	padding-left: 10px;
+	font-size: 35px;
+	color: #131629;
+}
+.tituloEmpleado{
+	font-size: 35px;
+	color: #131629;
+}
+
+/*------------------------------------
+	Fin serviciosyempleados.html
+------------------------------------*/
+
+
+input[type="text"]{
+	padding: 15px;
+	width: 95%;
+	margin: 10px 5px 5px 10px;
+	outline: none;
+	border: 4px solid #555;
+	border-radius: 5px;
+	font-size: 15px;
+	transition: all 1s ease;
+}
+input[type="email"]{
+	padding: 15px;
+	width: 95%;
+	margin: 10px 5px 5px 10px;
+	outline: none;
+	border: 4px solid #555;
+	border-radius: 5px;
+	font-size: 15px;
+	transition: all 1s ease;
+}
+input:focus{
+	border: 4px solid #131629;
+}
+
+textarea{
+	padding: 15px;
+	width: 95%;
+	margin: 10px 5px 5px 10px;
+	outline: none;
+	border: 4px solid #555;
+	border-radius: 5px;
+	font-size: 15px;
+	transition: all 1s ease;
+}
+textarea:focus{
+	border: 4px solid #131629;
+}
+.tituloCotiza{
+	margin: 20px 0 0 15px;
+	font-size: 35px;
+	color: #131629;
+}
+.lateralCotiza{
+	padding: 20px;
+}
+.titulolateralCotiza{
+	font-size: 35px;
+	color: #131629;
+	margin-bottom: 10px;
+}
+input[type="submit"]{
+	padding: 15px;
+	width: 40%;
+	margin: 10px 5px 5px 10px;
+	outline: none;
+	border-radius: 5px;
+	font-size: 18px;
+	transition: all 1s ease;
+	background: #d73117;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+input[type="reset"]{
+	padding: 15px;
+	width: 40%;
+	margin: 10px 5px 5px 10px;
+	outline: none;
+	border-radius: 5px;
+	font-size: 18px;
+	transition: all 1s ease;
+	background: #d73117;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover{
+	background: #131629;
+}
+input[type="reset"]:hover{
+	background: #131629;
+}
+
+#btnMenu{
+	display: none;
+}
+
+
+@media screen and (max-width: 700px) {
+	#btnMenu{
+		display: block;
+	}
+	header{
+		flex-direction: column;
+	}
+	header h1{
+		margin-left: 0;
+	}
+	header .logo{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		padding: 1em;
+	}	
+	header .enlaces{
+		width: 100%;
+		padding: 1em;
+	}
+	header .enlaces ul{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding-top: 0;
+	}
+	header .enlaces ul li{
+		text-align: center;
+		padding: .2em;
+	}
+}
+
+
+
+
+.enlaces_lateral_o{	
+    display: none;
+}
+
+.mostra_enlaces_lateral_o{
+	display: block;
+	width: 250px;
+	height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 60px 10px 0 20px;
+	text-align: center;
+	background: #131629;
+}
+.mostra_enlaces_lateral_o #cerrar_enlaces_lateral_o{
+	text-align: right;	
+}
+.mostra_enlaces_lateral_o a{
+	display: block;
+	padding: 10px 0 10px 0;
+}
+.desplazar{
+	margin-left: 250px;
+}
+
