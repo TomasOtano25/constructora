@@ -1,3 +1,3 @@
-# constructora
+## Constructora
 
-La aplicacion es una simple pagina estatica de una constructora.
+Pagina web representativa de una constructora.
